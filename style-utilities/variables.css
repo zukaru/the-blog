@@ -1,0 +1,12 @@
+
+
+/* Link to color palette */
+/* https://colors.muz.li/palette/6483a1/466471/6a6fa1/64a17a/467156 */
+
+:root {
+    --bg-color-light: #f5f5f5;
+    --bg-color-dark: #466471;
+
+    --text-color-light: #f5f5f5;
+    --text-color-dark: #466471;
+}

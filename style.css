@@ -2,15 +2,13 @@
 @import './blog-post/blog-post.css';
 @import './style-utilities/reset-style.css';
 @import './style-utilities/animations.css';
+@import './style-utilities/variables.css';
 
-:root {
-    --bg-color-primary: #f5f5f5;
 
-    --text-color-primary: #364e58;
-}
 html {
-    background: var(--bg-color-primary);
-    color: var(--text-color-primary)
+    background: var(--bg-color-light);
+    color: var(--text-color-dark);
+    font-family: 'Raleway', sans-serif;
 }
 
 #page-container > * {
@@ -36,6 +34,7 @@ html {
     height: 5.5em;
     grid-area: head;
     background:  linear-gradient(to right, #6483a1, #f5f5f5 90%);
+    box-shadow: 0 1px 5px black;
 }
 
 #header__branding {
@@ -72,6 +71,9 @@ html {
     align-items: center;
     height: 3em;
     grid-area: foot;
+    background:  var(--bg-color-dark);
+    color: var(--text-color-light);
+    box-shadow: 0 -1px 5px black;
 }
 
 
@@ -87,4 +89,13 @@ html {
             "foot";
     }
 }
+
+@media (max-width: 750px) {
+    #header__branding {
+        height: 4rem;
+    }
+}
+
+
+
 
