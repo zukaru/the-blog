@@ -1,12 +1,90 @@
 @import './design-system/design-system.css';
 @import './blog-post/blog-post.css';
+@import './style-utilities/reset-style.css';
+@import './style-utilities/animations.css';
 
-.header {
-    display: flex;
-    justify-content: space-between;
+:root {
+    --bg-color-primary: #f5f5f5;
+
+    --text-color-primary: #364e58;
+}
+html {
+    background: var(--bg-color-primary);
+    color: var(--text-color-primary)
 }
 
-.header__nav {
+#page-container > * {
+    /* border: 2px solid black; */
+}
 
+#page-container {
+    display: grid;
+    width: 100%;
+    column-gap: 30px;
+    grid-template-columns: 200px auto;
+    row-gap: 30px;
+    grid-template-areas: 
+        "head  head head head"
+        "aside main main main"
+        "foot  foot foot foot";
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5em;
+    grid-area: head;
+    background:  linear-gradient(to right, #6483a1, #f5f5f5 90%);
+}
+
+#header__branding {
+    margin-left: 1rem;
+    animation: flip 2s 1.5s;
+    height: 5rem;
+}
+
+#header__nav {
+    margin-right: 1rem;
+}
+
+#aside {
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    padding: 1.5rem;
+}
+
+#aside ul li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    grid-area: main;
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    grid-area: foot;
+}
+
+
+/* Media queries for responsive functionality */
+
+@media (max-width: 750px) {
+    #page-container {
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "head"
+            "aside"
+            "main"
+            "foot";
+    }
 }
 
