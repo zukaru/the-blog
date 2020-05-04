@@ -3,9 +3,9 @@
         transform: rotate(0);
         transform-origin: 0 0;
     }
-    80% {
-        transform: rotate(395deg);
-        transform-origin: 0 50%;
+    70% {
+        transform: rotate(370deg);
+        transform-origin: 60% -50%;
     }
     100% {
         transform: rotate(360deg);

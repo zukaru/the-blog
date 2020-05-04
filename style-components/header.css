@@ -1,0 +1,19 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5em;
+    grid-area: head;
+    background:  linear-gradient(to right, var(--color-primary), var(--color-light) 90%);
+    box-shadow: 0 1px 5px var(--color-shadow);
+}
+
+#header__branding {
+    margin-left: 1rem;
+    animation: flip 2s 1.5s;
+    height: 5rem;
+}
+
+#header__nav {
+    margin-right: 1rem;
+}

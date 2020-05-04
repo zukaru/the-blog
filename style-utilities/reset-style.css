@@ -1,3 +1,5 @@
+/* Reset default web browser styles */
+
 html, body, ul {
 	margin: 0;
 	padding: 0;
@@ -5,26 +7,47 @@ html, body, ul {
 	font-size: 100%;
 	font: inherit;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+/* Set global styling for html document */
+html {
+    background: var(--color-light);
+    color: var(--color-primary-dark);
+    font-family: 'Raleway', sans-serif;
+}
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+a, a:visited:hover {
+	color: var(--text-color-primary-light);
+}
+
+a:visited, a:hover {
+	color: var(--color-secondary);
 }

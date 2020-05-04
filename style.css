@@ -1,54 +1,36 @@
-@import './design-system/design-system.css';
-@import './blog-post/blog-post.css';
+/* Styling utilities */
 @import './style-utilities/reset-style.css';
 @import './style-utilities/animations.css';
 @import './style-utilities/variables.css';
 
+/* Reusable styling components */
+@import './style-components/header.css';
+@import './style-components/footer.css';
+
 
 html {
-    background: var(--bg-color-light);
-    color: var(--text-color-dark);
+    background: var(--color-light);
+    color: var(--color-primary-dark);
     font-family: 'Raleway', sans-serif;
 }
 
 #page-container > * {
-    /* border: 2px solid black; */
+    /* border: 2px solid var(--color-shadow); */
 }
 
 #page-container {
     display: grid;
     width: 100%;
-    column-gap: 30px;
+    column-gap: 50px;
     grid-template-columns: 200px auto;
     row-gap: 30px;
     grid-template-areas: 
         "head  head head head"
-        "aside main main main"
+        "aside main main ."
         "foot  foot foot foot";
 }
 
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5.5em;
-    grid-area: head;
-    background:  linear-gradient(to right, #6483a1, #f5f5f5 90%);
-    box-shadow: 0 1px 5px black;
-}
-
-#header__branding {
-    margin-left: 1rem;
-    animation: flip 2s 1.5s;
-    height: 5rem;
-}
-
-#header__nav {
-    margin-right: 1rem;
-}
-
 #aside {
-    display: flex;
     flex-direction: column;
     grid-area: aside;
     padding: 1.5rem;
@@ -59,27 +41,16 @@ html {
 }
 
 #main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+    display: inline-flex;
+    flex-flow: column;
+    padding: 3rem;
     grid-area: main;
+    text-indent: 1.5rem;
+    line-height: 1.5rem;
 }
-#footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3em;
-    grid-area: foot;
-    background:  var(--bg-color-dark);
-    color: var(--text-color-light);
-    box-shadow: 0 -1px 5px black;
-}
-
 
 /* Media queries for responsive functionality */
-
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     #page-container {
         grid-template-columns: auto;
         grid-template-areas: 
@@ -88,14 +59,8 @@ html {
             "main"
             "foot";
     }
-}
 
-@media (max-width: 750px) {
     #header__branding {
         height: 4rem;
     }
 }
-
-
-
-
