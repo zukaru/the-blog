@@ -1,0 +1,29 @@
+.btn {
+    padding: 1rem;
+    width: 15rem;
+    margin: auto;
+    cursor: pointer;
+
+    /* For linear gradient border with rounded corners */
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background: var(--color-light);
+    border-image-slice: 1;
+    border-image-width: 1;
+    background-clip: padding-box;
+    position: relative;
+}
+
+/* Also for linear gradient border with rounded corners */
+.btn::after{
+    position: absolute;
+    top: -2px; bottom: -2px;
+    left: -2px; right: -2px;
+    background: linear-gradient(
+        to right,
+        var(--color-tertiary-dark),
+        var(--color-secondary-dark));;
+    content: '';
+    z-index: -1;
+    border-radius: 16px;
+}

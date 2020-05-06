@@ -1,0 +1,26 @@
+.card {
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    border-radius: 3px;
+    box-shadow: 0 0 5px var(--color-shadow);
+    transition: transform .2s, box-shadow .2s;
+    cursor: pointer;
+
+}
+
+.card:hover {
+    transform: translateY(-.5rem);
+    box-shadow: 0 3px 7px var(--color-shadow);
+}
+
+.card__img {
+    height: 12rem;
+}
+.card__content {
+    padding: 1rem;
+}

@@ -1,19 +1,28 @@
+@import '../style-utilities/animations.css';
+@import '../style-utilities/variables.css';
+
+
 #header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5.5em;
     grid-area: head;
-    background:  linear-gradient(to right, var(--color-primary), var(--color-light) 90%);
+    background:  linear-gradient(
+        150deg,
+        var(--color-primary-dark),
+        var(--color-tertiary-dark));
     box-shadow: 0 1px 5px var(--color-shadow);
+}
+
+#blog-page,
+#post-page,
+#design-page {
+    text-decoration: underline;
 }
 
 #header__branding {
     margin-left: 1rem;
     animation: flip 2s 1.5s;
     height: 5rem;
-}
-
-#header__nav {
-    margin-right: 1rem;
 }

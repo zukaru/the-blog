@@ -45,9 +45,11 @@ table {
 }
 
 a, a:visited:hover {
-	color: var(--text-color-primary-light);
+	color: var(--color-secondary);
+	text-decoration: none;
 }
 
 a:visited, a:hover {
-	color: var(--color-secondary);
+	color: var(--color-tertiary-dark);
+	text-decoration: underline;
 }
