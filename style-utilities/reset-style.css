@@ -1,3 +1,10 @@
+* {
+    -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+    -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+    -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
 /* Reset default web browser styles */
 
 html, body, ul {
@@ -25,6 +32,10 @@ body {
 	line-height: 1;
 }
 
+button:focus {
+	outline: transparent;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -45,11 +56,18 @@ table {
 }
 
 a, a:visited:hover {
-	color: var(--color-secondary);
+	color: var(--color-secondary-dark);
 	text-decoration: none;
 }
 
 a:visited, a:hover {
-	color: var(--color-tertiary-dark);
+	color: var(--color-primary);
 	text-decoration: underline;
+}
+
+.current-page,
+.current-page:visited,
+.current-page:hover {
+	color: var(--color-secondary-dark);
+	text-decoration: none;
 }

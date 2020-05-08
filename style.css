@@ -37,12 +37,11 @@ html {
     display: grid;
     width: 100%;
     column-gap: 50px;
-    grid-template-columns: 200px auto;
+    grid-template-columns: auto;
     row-gap: 30px;
     grid-template-areas: 
         "head  head head head"
-        "title .    .    .   "
-        "aside main main .   "
+        "aside main main main"
         "foot  foot foot foot";
 }
 
@@ -52,13 +51,12 @@ html {
 }
 
 #aside {
-    color: var(--color-primary);
+    display: flex;
+    color: var(--color-primary-dark);
     flex-direction: column;
     grid-area: aside;
     padding: 1.5rem;
 }
-
-
 
 #aside ul li:not(:last-child) {
     margin-bottom: 0.5rem;
@@ -67,7 +65,7 @@ html {
 #main {
     display: flex;
     padding: 3rem;
-    justify-content: space-between;
+    justify-content: center;
     grid-area: main;
     flex-wrap: wrap;
     text-indent: 1.5rem;
@@ -91,6 +89,11 @@ html {
     }
 
     #aside {
-        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    #main {
+        padding:0;
     }
 }
