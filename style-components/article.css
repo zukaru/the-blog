@@ -5,12 +5,12 @@
     padding: 1em;
 }
 
-.article ul {
+.article__ul {
     list-style-type: square;
     list-style-position: inside;
 }
 
-.article ol {
+.article__ol {
     list-style: decimal-leading-zero;
 }
 

@@ -11,14 +11,14 @@
 @import '../style-components/article.css';
 
 /* Skip repetitive content for keyboard and screen readers */
-#skip a {
+#skip .a {
     display: block;
     position: absolute;
     left: -999px;
     top: -999px;
     }
 
-#skip a:focus {
+#skip .a:focus {
     left: 0;
     top: 0;
     color: var(--color-light);
@@ -49,7 +49,7 @@
     padding: 1.5em;
 }
 
-#aside ul li:not(:last-child) {
+.aside__ul li:not(:last-child) {
     margin-bottom: 0.5em;
 }
 
