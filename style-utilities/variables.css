@@ -1,10 +1,5 @@
-
-
 /* Link to color palette */
 /* https://colors.muz.li/palette/6483a1/466471/6a6fa1/64a17a/467156 */
-
-
-
 :root {
     --color-light: #f5f5f5;
     --color-light-dark: lightgray;
@@ -14,7 +9,6 @@
     --color-secondary-dark:  #cd3700;
     --color-tertiary: #00ffff;
     --color-tertiary-dark: #03a89e;
-
     --color-shadow: black;
     --color-shadow-light: gray;
 }

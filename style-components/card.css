@@ -24,12 +24,9 @@
         box-shadow: 0 3px 10px var(--color-shadow-light);
         transition: transform .2s, box-shadow .2s;
     }
-
     .card__btn:hover {
         border: 1px outset var(--color-light-dark);
     }
-
-
 }
 
 .card__img {
@@ -51,10 +48,8 @@
     text-transform: uppercase;
     padding: .5em;
     margin: 1em;
-
     transition: border .1s;
 }
-
 
 .card__btn:active {
     border: 1px inset var(--color-light-dark);

@@ -44,9 +44,6 @@
     -webkit-shape-outside: circle(30% at 50% 50%);
 }
 
-.article__author-info__group {
-}
-
 .article__author-info__group p {
     margin: 0;
 }
@@ -80,7 +77,4 @@
         var(--color-tertiary-dark),
         var(--color-secondary)
     );
-}
-
-.article__social__icon {
 }

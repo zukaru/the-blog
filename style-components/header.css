@@ -1,7 +1,6 @@
 @import '../style-utilities/animations.css';
 @import '../style-utilities/variables.css';
 
-
 .header {
     display: flex;
     justify-content: space-between;

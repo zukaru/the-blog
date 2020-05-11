@@ -17,14 +17,12 @@
 
 .btn--primary {
     color: var(--color-secondary-dark);
-
     /* For linear gradient border with rounded corners */
     border: 2px solid transparent;
     background: var(--color-light);
     border-image-slice: 1;
     border-image-width: 1;
     background-clip: padding-box;
-
     /* Animation */
     transition: transform .05s,
         background-clip .1s,
@@ -72,9 +70,6 @@
         transition: background .1s;
     } 
 }
-    
-    
-
 
 .btn:active {
     transition: transform .1s,
