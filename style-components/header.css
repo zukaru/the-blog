@@ -2,7 +2,7 @@
 @import '../style-utilities/variables.css';
 
 
-#header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,15 +15,8 @@
     box-shadow: 0 1px 5px var(--color-shadow);
 }
 
-#blog-page,
-#post-page,
-#design-page {
-    text-decoration: underline;
-}
-
-#header__branding {
-    margin-left: 1rem;
-    animation: flip 2s 1.5s;
-    height: 5rem;
+.header__branding {
+    margin-left: 1em;
+    height: 5em;
 }
 

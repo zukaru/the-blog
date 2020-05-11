@@ -15,17 +15,12 @@ html, body, ul {
 	font: inherit;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-/* Set global styling for html document */
+/* Set styling for html document */
 html {
     background: var(--color-light);
     color: var(--color-primary-dark);
-    font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	
 }
 
 body {
@@ -55,14 +50,19 @@ table {
 	border-spacing: 0;
 }
 
-a, a:visited:hover {
+a:hover {
+	color: var(--color-secondary-dark);
+	text-decoration: underline;
+}
+
+a:visited:hover {
 	color: var(--color-secondary-dark);
 	text-decoration: none;
 }
 
-a:visited, a:hover {
-	color: var(--color-primary);
-	text-decoration: underline;
+a, a:visited {
+	color: var(--color-primary-dark);
+	text-decoration: none;
 }
 
 .current-page,

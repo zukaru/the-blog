@@ -13,6 +13,10 @@
     }
 }
 
+.flip-anim {
+    animation: flip 2s 1.5s;
+}
+
 @keyframes glow-shadow {
     from {box-shadow: 0 3px 3px var(--color-primary)}
     to {box-shadow: 0 3px 13px var(--color-primary)}

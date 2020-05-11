@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System</title>
+    <link rel="stylesheet" href="./design-system.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip repetitive content for keyboard and screen readers -->
+    <div id="skip">
+        <a href="#main">Skip to main content</a>
+    </div> 
+    <!-- This 'page-container' div wraps the page to implement css grid -->
+    <div id="page-container">
+        
+        <header id="header" class="header">
+            <img src="../assets/images/the_blog_logo_f5f5f5.png" alt="Brand logo" class="header__branding">
+        </header>
+        <aside id="aside">
+            <h2>Design System</h2>
+            <h3>Featured</h3>
+            <ul>
+                <li><a href="../index.html">The Blog</a></li>
+                <li><a href="../blog-post/blog-post.html">Blog Post</a></li>
+                <li><a class="current-page">Design System</a></li>
+            </ul>
+            <h3>Archives</h3>
+            <ul>
+                <li><a href="#">December 2019</a></li>
+                <li><a href="#">November 2019</a></li>
+                <li><a href="#">October 2019</a></li>
+                <li><a href="#">September 2019</a></li>
+                <li><a href="#">August 2019</a></li>
+                <li><a href="#">July 2019</a></li>
+                <li><a href="#">June 2019</a></li>
+            </ul>
+            <button class="btn btn--primary">Newsletter</button>
+            <button class="btn btn--secondary">Follow Us</button>
+        </aside>
+        
+        <main id="main">
+            <h1>Header 1</h1>
+            <h2>Header 2</h2>
+            <h3>Header 3</h3>
+            <h4>Header 4</h4>
+            <h5>Header 5</h5>
+            <h6>Header 6</h6>
+            <a href="/">Anchor</a>
+            <p>This is a paragraph.</p>
+            <P class="bold">Bold</P>
+            <p class="underline">Underline</p>
+            <h1>Colors</h1>
+            <div class="color-samples">
+                <div class="color-primary"><p>#00688b Primary</p></div>
+                <div class="color-primary-dark"><p>#27408b Primary Dark</p></div>
+                <div class="color-secondary"><p>#ff6103 Secondary</p></div>
+                <div class="color-secondary-dark"><p>#cd3700 Secondary Dark</p></div>
+                <div class="color-tertiary-dark"><p>#03a89e Tertiary Dark</p></div>
+            </div>
+            <h1>Buttons</h1>
+            <button class="btn btn--primary">Primary</button>
+            <button class="btn btn--secondary">Secondary</button>
+        </main>
+        <footer id="footer" class="footer">Copyright &copy; 2020 The Blog, Inc</footer>
+    </div>
+</body>
+</html>

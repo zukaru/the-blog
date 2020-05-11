@@ -1,0 +1,91 @@
+/* Styling utilities */
+@import '../style-utilities/global.css';
+@import '../style-utilities/animations.css';
+@import '../style-utilities/variables.css';
+@import '../style-utilities/typography.css';
+
+/* Reusable styling components */
+@import '../style-components/header.css';
+@import '../style-components/footer.css';
+@import '../style-components/button.css';
+@import '../style-components/article.css';
+
+/* Skip repetitive content for keyboard and screen readers */
+#skip a {
+    display: block;
+    position: absolute;
+    left: -999px;
+    top: -999px;
+    }
+
+#skip a:focus {
+    left: 0;
+    top: 0;
+    color: var(--color-light);
+    padding: 3px;
+    background: var(--color-secondary-dark);
+    border:1px solid var(--color-shadow);
+}
+
+/* CSS grid container for page layout */
+#page-container {
+    display: grid;
+    width: 100%;
+    column-gap: 50px;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    grid-template-areas: 
+        "head  head head head"
+        "aside main main main"
+        "foot  foot foot foot";
+}
+
+/* Aside positioning and styling */
+#aside {
+    display: flex;
+    color: var(--color-primary-dark);
+    flex-direction: column;
+    grid-area: aside;
+    padding: 1.5em;
+}
+
+#aside ul li:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+/* Main positioning and styling */
+#main {
+    display: flex;
+    padding: 3em;
+    justify-content: flex-start;
+    grid-area: main;
+    flex-wrap: wrap;
+    text-indent: 1.5em;
+    line-height: 1.5em;
+}
+
+/* Media queries for responsive functionality */
+@media (max-width: 850px) {
+    #page-container {
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "head"
+            "title"
+            "aside"
+            "main"
+            "foot";
+    }
+
+    #header__branding {
+        height: 4em;
+    }
+
+    #aside {
+        align-items: center;
+        text-align: justify;
+    }
+
+    #main {
+        padding:0;
+    }
+}

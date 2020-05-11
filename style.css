@@ -1,5 +1,5 @@
 /* Styling utilities */
-@import './style-utilities/reset-style.css';
+@import './style-utilities/global.css';
 @import './style-utilities/animations.css';
 @import './style-utilities/variables.css';
 
@@ -8,13 +8,6 @@
 @import './style-components/footer.css';
 @import './style-components/card.css';
 @import './style-components/button.css';
-
-
-html {
-    background: var(--color-light);
-    color: var(--color-primary-dark);
-    font-family: 'Raleway', sans-serif;
-}
 
 /* Skip repetitive content for keyboard and screen readers */
 #skip a {
@@ -33,6 +26,7 @@ html {
     border:1px solid #990000;
     }
 
+/* CSS grid container for page layout */
 #page-container {
     display: grid;
     width: 100%;
@@ -45,31 +39,28 @@ html {
         "foot  foot foot foot";
 }
 
-#title {
-    grid-area: title;
-    margin-left: 1rem;
-}
-
+/* Aside positioning and styling */
 #aside {
     display: flex;
     color: var(--color-primary-dark);
     flex-direction: column;
     grid-area: aside;
-    padding: 1.5rem;
+    padding: 1.5em;
 }
 
 #aside ul li:not(:last-child) {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
 }
 
+/* Main positioning and styling */
 #main {
     display: flex;
-    padding: 3rem;
-    justify-content: center;
+    padding: 3em;
+    justify-content: space-around;
     grid-area: main;
     flex-wrap: wrap;
-    text-indent: 1.5rem;
-    line-height: 1.5rem;
+    text-indent: 1.5em;
+    line-height: 1.5em;
 }
 
 /* Media queries for responsive functionality */
@@ -85,7 +76,7 @@ html {
     }
 
     #header__branding {
-        height: 4rem;
+        height: 4em;
     }
 
     #aside {

@@ -1,0 +1,21 @@
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.wavy-underline {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.text-dec-secondary-dk {
+    text-decoration-color: var(--color-secondary-dark);
+}
+
